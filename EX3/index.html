@@ -1,0 +1,51 @@
+<html>
+ <head>
+    <link href="style.css"
+    rel="stylesheet"
+    type="text/css"/>
+    <h1> <center>Store</center></h1>
+    <script type="text/javascript" src="store.js">
+    
+    </script>
+ </head>
+<body>
+   
+
+   <form method="post" name = "store" onsubmit= "return validate()" action= "backend.php">
+
+
+      <div id ='username'>Username (must be an email): </div>
+      <input id='user' type="text" name=user><br><br><br>
+
+      <div id ='password'>Password: </div>
+      <input id='pass' type="text" name=pass><br><br><br>
+
+      <div id = 'item1'>$500.00 Box of Live Squirrels</div>
+      <label for = "quantity1">Quantity: </label>
+      <input id="quantity1" type="number" name="quantity1" value=0><br><br><br>
+      
+
+      <div id = 'item2'>$24.99 Rabbit Right Foots</div>
+      <label for = "quantity2">Quantity: </label>
+      <input id="quantity2" type="number" name="quantity2" value= 0><br><br><br>
+
+      <div id ='item3'>$76.21 Rabbit Left Foots</div>
+      <label for = "quantity3">Quantity: </label>
+      <input id="quantity3" type="number" name="quantity3" value=0><br><br><br>
+      
+
+      
+
+      <div id ='Shipping'>Shipping Options</div>
+      <input id="answer" type="radio" name="ship" value="1">Free 7 day<br>
+      <input id="answer" type="radio" name="ship" value="2"> $5.00 3 Day<br>
+      <input id="answer" type="radio" name="ship" value="3" >$50.00 Overnight<br><br><br>
+      
+
+     
+      <input type="submit" value="Submit"><br>
+      <input type="reset"><br>
+      </form>
+  
+</body>
+</html>
